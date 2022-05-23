@@ -19,7 +19,6 @@ def mostrarSiete(listaCanciones):
 # Función que saca el promedio de puntos que tuvo cada canción
 def sacarPromedioCanciones(listaCanciones, cantEncuestados):
     for cancion in listaCanciones:
-        
         puntos = cancion[3]
         promedio = puntos / cantEncuestados
         cancion[3] = promedio
