@@ -14,7 +14,8 @@ def mostrarSiete(listaCanciones):
     print()
     for i in range(7):
         nombre = listaCanciones[i][0]
-        print(f" -> Ranking {i + 1} : {nombre}")
+        puntos = listaCanciones[i][3]
+        print(f" -> Ranking {i + 1} : {nombre} -- Puntaje : {puntos}")
 
 # Función que saca el promedio de puntos que tuvo cada canción
 def sacarPromedioCanciones(listaCanciones, cantEncuestados):
@@ -72,6 +73,7 @@ def cargarCanciones():
     print()
     print(" --- INGRESAR LOS DATOS DE LAS CANCIONES --- ")
     print()
+    listaCanciones = [["El mundo unido por un balón", 1986, "Juan Carlos Abara"],["Un'estate italiana", 1990, "Gianna Nannini"],["Gloryland", 1994, "Daryl Hall"],["La copa de la vida", 1998, "Ricky Martin"],["Boom!", 2002, "Anastacia"],["The time of our lives", 2006, "Il Divo"],["Waka Waka", 2010, "Shakira"],["We are one", 2014, "Pitbull"], ["Live it up", 2018, "Nicky Jam"],["Hayya hayya", 2022, "Trinidad Cardona"]]
     listaCanciones = list()
     for i in range(10):
         print()
